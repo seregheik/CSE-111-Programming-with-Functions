@@ -7,9 +7,13 @@ def main():
     # these are the two arguments that will be used in the program
     quantity = random.choice([1,2])
     tense = random.choice(['present', 'past', 'future'])
-    
-    sentence = make_sentence(quantity=quantity, tense=tense)
-    print(sentence)
+    i = 0    
+   
+    while i < 6:
+        # this is to make it print 6 sentences
+        i += 1
+        sentence = make_sentence(quantity=quantity, tense=tense)
+        print(sentence)
     
 def make_sentence(quantity, tense):
     if quantity == 1:
